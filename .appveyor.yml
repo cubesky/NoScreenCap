@@ -1,0 +1,14 @@
+version: 1.0.{build}
+skip_tags: true
+image: Visual Studio 2017
+configuration: Release
+platform: 
+  - x64
+  - x86
+build:
+  project: console\console.vcxproj
+artifacts:
+  - path: console\Release\32.com
+    name: NoScreenCap32
+  - path: console\x64\Release\64.com
+    name: NoScreenCap64
